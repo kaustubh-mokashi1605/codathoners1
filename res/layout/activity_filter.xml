@@ -1,0 +1,88 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+
+    <EditText
+        android:id="@+id/catfilter"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="24dp"
+        android:ems="10"
+        android:hint="Enter Category" />
+
+    <TextView
+        android:id="@+id/pricetext"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/pricefilter"
+        android:layout_alignBottom="@+id/pricefilter"
+        android:layout_alignParentRight="true"
+        android:text="Lakhs"
+        android:textAppearance="?android:attr/textAppearanceSmall" />
+
+    <TextView
+        android:id="@+id/areatext"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/areafilter"
+        android:layout_alignBottom="@+id/areafilter"
+        android:layout_alignParentRight="true"
+        android:text="sq Feet"
+        android:textAppearance="?android:attr/textAppearanceSmall" />
+
+    <Button
+        android:id="@+id/filterbutton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/areafilter"
+        android:layout_alignRight="@+id/areafilter"
+        android:layout_below="@+id/areafilter"
+        android:layout_marginTop="16dp"
+        android:text="Filter" />
+
+    <Button
+        android:id="@+id/resetbutton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/filterbutton"
+        android:layout_alignRight="@+id/filterbutton"
+        android:layout_below="@+id/filterbutton"
+        android:layout_marginTop="14dp"
+        android:text="Reset to Defaults" />
+
+    <Button
+        android:id="@+id/cancelfilter"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/resetbutton"
+        android:layout_alignRight="@+id/resetbutton"
+        android:layout_below="@+id/resetbutton"
+        android:layout_marginTop="17dp"
+        android:text="Cancel" />
+
+    <EditText
+        android:id="@+id/areafilter"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/pricefilter"
+        android:layout_below="@+id/pricefilter"
+        android:layout_marginTop="44dp"
+        android:ems="10"
+        android:hint="Enter Area" >
+
+        <requestFocus />
+    </EditText>
+
+    <EditText
+        android:id="@+id/pricefilter"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/catfilter"
+        android:layout_below="@+id/catfilter"
+        android:layout_marginTop="36dp"
+        android:ems="10"
+        android:hint="Enter Max Price" />
+
+</RelativeLayout>

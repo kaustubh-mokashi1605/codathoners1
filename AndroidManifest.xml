@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.housing"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="8"
+        android:targetSdkVersion="18" />
+
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name="com.example.housing.MainActivity"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.example.housing.SignupAcitivity"
+            android:label="@string/title_activity_signup_acitivity" >
+        </activity>
+        <activity
+            android:name="com.example.housing.BuyorSell"
+            android:label="@string/title_activity_buyor_sell" >
+        </activity>
+        <activity
+            android:name="com.example.housing.Sellerprop"
+            android:label="@string/title_activity_sellerprop" >
+        </activity>
+        <activity
+            android:name="com.example.housing.Buyerlist"
+            android:label="@string/title_activity_buyerlist" >
+        </activity>
+        <activity
+            android:name="com.example.housing.Addplot"
+            android:label="@string/title_activity_addplot" >
+        </activity>
+        <activity
+            android:name="com.example.housing.Filter"
+            android:label="@string/title_activity_filter" >
+        </activity>
+        <activity
+            android:name="com.example.housing.Buyerinterest"
+            android:label="@string/title_activity_buyerinterest" >
+        </activity>
+    </application>
+
+</manifest>

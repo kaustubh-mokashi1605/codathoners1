@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Housing</string>
+    <string name="action_settings">Settings</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="title_activity_signup_acitivity">SignupAcitivity</string>
+    <string name="title_activity_buyor_sell">BuyorSell</string>
+    <string name="title_activity_sellerprop">Sellerprop</string>
+    <string name="title_activity_buyerlist">Buyerlist</string>
+    <string name="title_activity_addplot">Addplot</string>
+
+    <string-array name="spn">
+        <item>"Commercial"</item>
+        <item>"Agricultural"</item>
+    </string-array>
+
+    <string name="title_activity_filter">Filter</string>
+    <string name="title_activity_buyerinterest">Buyerinterest</string>
+
+</resources>

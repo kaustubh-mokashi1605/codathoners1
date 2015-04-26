@@ -1,0 +1,62 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg"
+    tools:context=".buyorsell" >
+
+    <Button
+        android:id="@+id/sellbutton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/buybutton"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="22dp"
+        android:background="@drawable/buttonshaper"
+        android:shadowColor="#9EA5A8"
+        android:shadowDx="0"
+        android:shadowDy="0"
+        android:shadowRadius="5"
+        android:text="Sell!"
+        android:textColor="#FFFFFF"
+        android:textSize="30sp"
+        android:onClick="sell" />
+
+    <Button
+        android:id="@+id/buybutton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/sellbutton"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="154dp"
+        android:background="@drawable/buttonshaper"
+        android:shadowColor="#9EA5A8"
+        android:shadowDx="0"
+        android:shadowDy="0"
+        android:shadowRadius="5"
+        android:text="Buy!"
+        android:textColor="#FFFFFF"
+        android:textSize="30sp"
+        android:onClick="buy" />
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:layout_above="@+id/sellbutton"
+        android:layout_alignLeft="@+id/buybutton"
+        android:layout_alignRight="@+id/buybutton"
+        android:layout_marginBottom="24dp"
+        android:src="@drawable/sell" />
+
+    <ImageView
+        android:id="@+id/imageView1"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:layout_above="@+id/buybutton"
+        android:layout_alignLeft="@+id/buybutton"
+        android:layout_alignRight="@+id/buybutton"
+        android:layout_marginBottom="18dp"
+        android:src="@drawable/buy" />
+    
+</RelativeLayout>

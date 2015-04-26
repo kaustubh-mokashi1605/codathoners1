@@ -1,0 +1,85 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+
+    <EditText
+        android:id="@+id/Rate1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/LOCATION1"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:ems="10"
+        android:hint="ENTER RATE" />
+
+    <Button
+        android:id="@+id/Cancel1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignRight="@+id/Area1"
+        android:layout_marginBottom="23dp"
+        android:text="Cancel"
+        android:onClick="Cancel" />
+
+    <Button
+        android:id="@+id/Confirm1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/Cancel1"
+        android:layout_alignBottom="@+id/Cancel1"
+        android:layout_alignLeft="@+id/Category1"
+        android:text="Confirm" />
+
+    <EditText
+        android:id="@+id/LOCATION1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/Rate1"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="21dp"
+        android:ems="10"
+        android:hint="ENTER LOCATION" />
+
+    <EditText
+        android:id="@+id/Area1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/Rate1"
+        android:layout_below="@+id/Rate1"
+        android:layout_marginTop="20dp"
+        android:ems="10"
+        android:hint="ENTER AREA" >
+
+        <requestFocus />
+    </EditText>
+
+    <TextView
+        android:id="@+id/displaycategory"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/Category1"
+        android:layout_alignRight="@+id/Cancel1"
+        android:layout_below="@+id/Category1"
+        android:textAppearance="?android:attr/textAppearanceSmall" />
+
+    <Spinner
+        android:id="@+id/Category1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/Area1"
+        android:layout_alignRight="@+id/Area1"
+        android:layout_below="@+id/Area1"
+        android:layout_marginTop="19dp"
+        android:entries="@array/spn" />
+
+    <EditText
+        android:id="@+id/propid"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/displaycategory"
+        android:layout_alignTop="@+id/displaycategory"
+        android:hint="ENTER PROPERTY ID HERE"
+        android:ems="10" />
+
+</RelativeLayout>
